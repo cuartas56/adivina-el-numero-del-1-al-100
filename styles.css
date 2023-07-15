@@ -1,0 +1,85 @@
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  color: #555;
+  text-align: center;
+}
+
+input[type="number"] {  
+  padding: 10px;
+  border-radius: 5px;
+  margin: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3399ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+.reset {
+  background-color: #ff9933;
+}
+
+.reset:hover {
+  background-color: #cc6600;
+}
+
+#message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#click-counter {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #3399ff;
+  }
+  50% {
+    background-color: #ff9933;
+  }
+  100% {
+    background-color: #ff3399;
+  }
+}
+
+#guess-button {
+  animation: color-change 3s infinite;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1, p, input, button {
+  animation: slide-in 1s ease;
+}
